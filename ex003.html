@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><!-- Configurando o site-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- parte de csss-->
+    <style>
+    body{
+        background-color: rgb(130, 65, 252);
+    }
+    h1{
+        font-size: 50px;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+        color: white;
+    }
+    </style>
+    <title>Aula de Javascript</title>
+</head>
+<body><!-- corpo do site-->
+    <h1> Olá, Mundo!</h1>
+    <p> Já me livrei da maldição </p>
+
+<!-- Parte de javaScritp-->
+<script>
+/* nesse comando ele pede o nome do usuário, porém não guarda esse valor em nenhuma 
+variavel*/
+
+//VARIAVES EM JAVASCRIPT(var, let e const)
+var n1 = Number.parseInt( window.prompt('Digite um número')) // Sempre retorna uma String mesmo sendo number
+var n2 = Number.parseInt(prompt("Digite um número")) // Sempre retorna uma String mesmo sendo number
+/*O Number.parseInt() converte uma string para int vulgo number, numeros com casas decimais se usa o Float
+pode ser usado também o só Number(valor), o jvs decide qual data type ele vai ser convertido com base no valor da variável
+Para se converter um número, seja ele float ou number para String, basta usar o nome da variavel.toString()
+
+
+
+
+
+*/
+var s = n1 + n2
+//alert("A soma dos valores é: " + s) //Concatenação 
+// o termo + sever tanto para para adição (number + number)
+// quanto para concatenação(String + String)
+
+//importante: templateString ${variavel}, SEMPRE VAI SER ENTRE CRASE
+
+alert(`A soma dos valores é ${s}`)
+
+</script>
+</body>
+</html>

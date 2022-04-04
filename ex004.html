@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+            color: blue
+        }
+
+    </style>
+</head>
+<body>
+    <script>  
+    //Formatação de String
+    var nome = window.prompt('Qual seu nome')
+    document.write(`Olá,${nome}, Seu nome tem ${nome.length} letras`)// leng é usado para ler o tamanho do dado
+    document.writeln(`<br>Seu nome em maiusculo é ${nome.toLocaleUpperCase()}</br>`)//ToLocaleUpperCase é usado para transformas todas as letras em maiusculo
+    document.writeln(`Seu nome em letra minuscula é ${nome.toLocaleLowerCase()}`)//ToLocaleLowerCase é usado para transformas todas as letras em minusculo
+    </script>
+</body>
+</html>

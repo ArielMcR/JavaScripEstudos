@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        font-family: 'Lucida Sans';
+        color: black;
+        font-size: 45px;
+        text-align: center;
+    }
+    </style>
+
+
+</head>
+<body>
+    <script>
+        //Operadores Relacionais(>,<,>=,<=, == e !=), Lógicos +=,-=,--,++, == e ternários
+        //definimos 2 variáveis 
+        
+        var numero1 = 5
+        var numero2 = 2
+
+        var maior = numero1 > numero2 // resultado vai voltar sendo um boolean, ou sejá, true ou false
+        document.write(`O resultado da soma é: ${maior}`)//O document.write serve para apresentarmos lá no site html
+
+        //Para converter para uma string por exemplo, podemos usar um if, se maior == true ele apresenta x, caso contrario y
+        if(maior == true){
+        document.write(`<br>O resultado da soma é: maior</br>`)//O document.write serve para apresentarmos lá no site html
+        }
+        var menor = numero1 < numero2
+        document.writeln(`<br>O resultado da subtração é:  ${menor}</br>`)
+
+        var maiorIgual = numero1 >= numero2
+        document.write(`<br> O resultado da multiplicação é:  ${maiorIgual}</br>`)
+
+        var menorIgual = numero1 <= numero2
+        document.write(`<br> O resultado da divisão é:  ${menorIgual}</br>`)
+
+        var igual = numero1 == numero2
+        document.write(`<br> O resultado da divisão é:  ${igual}</br>`)
+
+        var diferente = numero1 != numero2
+        document.write(`<br> O resultado da potencia é:  ${diferente}</br>`)
+
+        //Igualdade absoluta
+        5 == "5" // um é number e o outro é uma string
+        5 === 5 // usamos 3 igual para quando queremos ver se são indenticos
+
+
+
+        //Operados térnarios(?, :)
+        var média = 8
+        // teste ? true : false
+        média >= 7 ? "Aprovado" : "Reprovado"
+    </script>
+</body>
+</html>

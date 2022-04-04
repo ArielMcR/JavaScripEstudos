@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números com o Dom</title>
+
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+    <h1> Somando os valores</h1>
+    <input type="number" name="" id="txtn1">+
+    <input type="number" name="" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <div id="resultado"> Resultado </div>
+    
+
+    <script> 
+    
+    function somar(){
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.getElementById('txtn2')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var resultado = window.document.getElementById('resultado')
+        var soma = n1 + n2
+        resultado.innerText = `O resultado é de: ${soma}`
+    }
+    
+    </script>
+</body>
+</html>

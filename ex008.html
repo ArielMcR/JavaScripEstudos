@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho com condições</title>
+
+<style>
+ body{
+     text-align: center;
+ }
+ h1#1{
+    color: black;
+    text-align: center;
+ }
+ input#b{ 
+    border-radius: 3px;
+    cursor: pointer;
+ }
+ input#text1{
+    border-radius: 9px;
+    background-color: aqua;
+    text-shadow: 2cm;
+ }
+
+</style>
+
+</head>
+<body>
+<h1 id= "1">Descobrindo sua nacionalidade</h1> 
+<input type="text" id="text1">
+<input type="button" value="Verificar" onclick="verificar()" id="b" onmouseenter="entrar()" onmouseout ="sair()">
+<div id="res"> </div>
+
+<script>
+    function verificar(){
+    var país = window.document.getElementById('text1')
+    var res = window.document.getElementById('res')
+    var País = String(país.value)
+    res.innerHTML = `Você mora no ${país.value}`
+    if(país.value == "brasil"){
+    res.innerHTML += ` e você é brasileiro`
+
+    }else{
+        res.innerHTML += ` e você é estrangeiro `
+    }
+    
+    }
+    function entrar(){
+    var button = window.document.getElementById('b')
+    button.style.background = "blue"
+
+    }
+    function sair(){
+    var button = window.document.getElementById('b')
+    button.style.background = "white"
+
+    }
+
+</script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area{
+            background-color: black;
+            color: white;
+            font-size: 15pt;
+            font-family: georgia;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="mouse()" onmouseenter="entrar()" onmouseout="sair()"> <!-- criando os eventos-->
+        interaja...
+    </div>
+    <script>
+        //Eventos em DOM
+        var area = document.getElementById('area') // pode ser assim também
+
+        // os eventos podem ser chamados diretamente pelo js utilizando o listener
+        area.addEventListener('click', mouse())
+        area.addEventListener('mosueenter', entar())
+        area.addEventListener('mouseout', sair())
+        function mouse(){
+            //var area = document.getElementById('area')
+            area.innerText= "Clicaste"
+        }
+        function entrar(){
+          //  var area2 = document.getElementById('area')
+            area.style.background = "blue"
+        }
+        function sair(){
+           // var area3 = document.getElementById('area')
+            area.style.background = "black"
+        }
+
+
+    </script>
+</body>
+</html>

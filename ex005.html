@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+   <style>
+       h1{ font-family: Arial, Helvetica, sans-serif;
+       }
+       p{
+        color: black;
+       }
+       body{
+           background-color: aquamarine;
+           
+       }
+   </style>
+
+
+</head>
+<body>
+    <h1> Inciando os estudos com o DOM</h1>
+    <p> Aqui vai o resultado</p>
+    <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" >
+        clique em mim
+
+    </div>
+    <!-- INTRODUÇÃO AO DOM-->
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] // selecionando por tag
+        window.document.write(p1.innerText)
+
+        var div = window.document.getElementById('msg') // selecionando por id
+        div.style.background = "green"
+        
+        var div2 = window.document.querySelector("div#msg") // usando o querySelector
+        div2.style.color = "red"
+
+    </script>
+    
+</body>
+</html>
